@@ -38,10 +38,7 @@ public class CustomerForm implements Serializable{
 	
 	
     /**
-     * The {@code Class} instance representing the primitive type
-     * {@code int}.
-     *
-     * @since   1.1
+     * List<Adress> model for dto
      */
 	private List<Adress> adressListModel;
 
