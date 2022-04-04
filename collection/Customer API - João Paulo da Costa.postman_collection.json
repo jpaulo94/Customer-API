@@ -1,0 +1,208 @@
+{
+	"id": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+	"name": "Customer API - João Paulo da Costa",
+	"description": "Http endpoint API to manage customers and addresses",
+	"order": [
+		"c81c5fde-c7b8-920f-78ee-1b6040e3bcfe",
+		"273b4b21-def5-4267-5253-d4fa84b2af30",
+		"e14484dd-3e87-376e-c2b3-5c5febf9aaaa",
+		"e6527f3a-8ff1-7b47-c7a1-5d5fd6368093",
+		"e3cb973e-f284-b433-f7ff-d0b33297c605",
+		"dbbe5405-f25d-cc73-8b27-7dcd7f978dd7"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649020892290,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "273b4b21-def5-4267-5253-d4fa84b2af30",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers/search?zipCode=83505131",
+			"queryParams": [
+				{
+					"key": "zipCode",
+					"value": "83505131",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1649102530291,
+			"name": "List Customers by ZipCode ",
+			"description": "",
+			"collectionId": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Joao teste\",\n    \"age\": 27,\n\t\"adressForm\": [\n            {\n                \"zipCode\": 83505134,\n                \"numberAdress\": 555\n            }\n        ]\n}"
+		},
+		{
+			"id": "c81c5fde-c7b8-920f-78ee-1b6040e3bcfe",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers/search",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1649102531579,
+			"name": "List all Customers",
+			"description": "",
+			"collectionId": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Joao teste\",\n    \"age\": 27,\n\t\"adressForm\": [\n            {\n                \"zipCode\": 83505134,\n                \"numberAdress\": 555\n            }\n        ]\n}"
+		},
+		{
+			"id": "dbbe5405-f25d-cc73-8b27-7dcd7f978dd7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers/edit/10011",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1649102524987,
+			"name": "Edit a customer",
+			"description": "",
+			"collectionId": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Joao teste 23\",\n    \"age\": 31,\n\t\"adressForm\": [\n          {\n                \"id\": 3,\n                \"zipCode\": 83509776,\n                \"numberAdress\": 2009\n            }\n        ]\n}"
+		},
+		{
+			"id": "e14484dd-3e87-376e-c2b3-5c5febf9aaaa",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers/remove/10010",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1649102529211,
+			"name": "Remove Customer",
+			"description": "",
+			"collectionId": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "e3cb973e-f284-b433-f7ff-d0b33297c605",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1649102527115,
+			"name": "Add a customer [Just one adress]",
+			"description": "",
+			"collectionId": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Customer Postman Add\",\n    \"age\": 27,\n\t\"adressForm\": [\n            {\n                \"zipCode\": 83508492,\n                \"numberAdress\": 9452\n            }\n        ]\n}"
+		},
+		{
+			"id": "e6527f3a-8ff1-7b47-c7a1-5d5fd6368093",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/customers/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1649102527995,
+			"name": "Add a customer [Two adress or more]",
+			"description": "",
+			"collectionId": "df92ad23-89a5-eaa7-017b-56aa86c56d66",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Customer - add\",\n    \"age\": 27,\n\t\"adressForm\": [\n            {\n                \"zipCode\": 83509490,\n                \"numberAdress\": 10\n            },\n            {\n                \"zipCode\": 83509497,\n                \"numberAdress\": 11\n            }\n        ]\n}"
+		}
+	]
+}
